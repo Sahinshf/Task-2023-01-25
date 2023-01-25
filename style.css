@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  background-image: url(./logonav.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 50px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  border-bottom: 1px solid rgb(247, 243, 243, 0.4);
+  background-color: #fff;
+}
+
+.navigation {
+  background-color: white;
+  max-width: 1320px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navigationList {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 17px;
+}
+
+li {
+  margin-left: 40px;
+
+  font-size: 17px;
+  color: #666;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.banner {
+  background: rgba(0, 0, 0, 0.6) url(./bannerhome.jpg);
+  background-blend-mode: darken;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  /* min-height: 100vh; */
+  min-height: 800px;
+}
+
+.banner,
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  width: 1200px;
+  padding-top: 160px;
+
+  text-align: center;
+
+  color: aliceblue;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-bottom: 17px;
+}
+
+.mainText {
+  font-size: 55px;
+  font-weight: 700;
+
+  margin-bottom: 50px;
+}
+
+.discover {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+
+  background-color: #ffa801;
+  border: 2px #ffa801 solid;
+  color: #fff;
+  font-weight: 600;
+
+  border-radius: 8px;
+  width: 170px;
+  height: 50px;
+}
+
+.discover:hover {
+  border: 2px #fff solid;
+
+  background-color: transparent;
+  transition: background 1s;
+}
+
+.settingsIconHolder {
+  position: fixed;
+  left: 0px;
+  top: 200px;
+}
+
+.settings {
+  border: 2px #ffa801 solid;
+  background-color: #ffa801;
+  border-radius: 0px 5px 5px 0px;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  animation-name: rotating;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.infoSection {
+  max-width: 1400px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 99px;
+  margin-bottom: 50px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.randomImage {
+  background-image: url(./woman.jpg);
+  width: 600px;
+  height: 400px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-left: auto; */
+}
+
+.infoTextSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.infoText {
+  width: 330px;
+  height: 230px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.textOfTextSection {
+  color: #666;
+  font-size: 20px;
+}
+
+.infoText .fa-solid,
+.partsOfInfo {
+  color: #ffa801;
+}
+
+.rotate2:hover {
+  animation-name: rotate2;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textOfTextSection:hover {
+  color: hotpink;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.dubai,
+.usa,
+.rome {
+  width: 410px;
+  height: 430px;
+
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.dubai {
+  background-image: url(./Dubai.jpg);
+}
+
+.usa {
+  background-image: url(./USA.jpg);
+}
+
+.rome {
+  background-image: url(./Rome.jpg);
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 70px;
+}
+
+.titleOfDestinationSection {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mainTitle {
+  font-size: 15px;
+  color: #ffa801;
+}
+
+.popularPlaceText {
+  font-size: 24px;
+}
+
+.imageOfDestinationSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1400px;
+  padding-top: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country {
+  border: 1px rgb(196, 195, 195) solid;
+  border-radius: 4px;
+}
+
+.travelInfo {
+  padding: 5px 20px;
+}
+
+.city {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.priceAndCountry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remainingDay {
+  display: flex;
+  align-items: center;
+}
+
+.remainingDay,
+.price {
+  color: #666;
+}
+
+.time {
+  padding-left: 5px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.serviceSection {
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.serviceChoices {
+  display: flex;
+  margin-top: 20px;
+
+  width: 410px;
+  height: 190px;
+
+  background-color: #f4f9ff;
+  border-radius: 5px;
+
+  padding: 20px 0px 0px 10px;
+}
+
+.services {
+  width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-3x {
+  color: #ffa801;
+
+  margin: 0px 16px;
+}
+
+.serviceInfo {
+  width: 270px;
+}
+
+.serviceInfoText {
+  color: #666;
+  /* font-family: "Nunito", sans-serif; */
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.serviceName {
+  font-weight: 500;
+}
