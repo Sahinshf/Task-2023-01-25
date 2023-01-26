@@ -274,6 +274,24 @@ li {
 .titleOfDestinationSection {
   text-align: center;
   font-family: "Open Sans", sans-serif;
+
+  position: relative;
+}
+
+/*  */
+.shadowDestinations {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+
+  transform: translate(-50%);
+
+  width: 1400px;
+  z-index: -1;
+
+  font-size: 70px;
+  font-weight: 900;
+  color: #efefef;
 }
 
 .mainTitle {
@@ -335,6 +353,27 @@ li {
 .serviceSection {
   margin-top: 60px;
   padding-top: 20px;
+}
+
+.titleOfServiceSection {
+  text-align: center;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.shadowSection {
+  width: 1400px;
+
+  position: absolute;
+  left: 50%;
+  top: -24px;
+
+  transform: translate(-50%);
+  z-index: -1;
+
+  font-size: 70px;
+  font-weight: 900;
+  color: #efefef;
 }
 
 .serviceChoices {
